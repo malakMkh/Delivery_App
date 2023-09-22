@@ -1,0 +1,171 @@
+.apropos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.apropos_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 36, 58);
+}
+.apropos_header {
+  width: 100%;
+  height: 40vw;
+  background-color: rgb(37, 36, 58);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  background-image: url('https://colissimo.tn/wp-content/uploads/2021/03/fragile.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(15, 15, 15, 0.553);
+}
+.apropos_header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  top: 0px;
+  left: 0px;
+  background: rgba(37, 36, 58, 0.3);
+  pointer-events: none;
+}
+
+.apropos_header_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  text-align: center;
+  width: 70%;
+  gap: 2rem;
+  color: #fff;
+  overflow: hidden;
+}
+.apropos_header_text h1 {
+  font-size: 5vw;
+}
+.apropos_header_text p {
+  width: 64%;
+}
+.apropos_header_text h5 {
+  color: rgb(255, 225, 33);
+}
+.apropos_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 33px;
+  gap: 5rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.apropos_partie1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  padding-top: 30px;
+}
+
+.apropos_parti1_img {
+  display: flex;
+  justify-content: center;
+}
+
+.apropos_parti1_img img {
+  width: 90%; /* L'image occupe 100% de la largeur du conteneur */
+  height: auto;
+  max-width: 90%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+  transition: width 0.5s; /* Ajout d'une transition fluide */
+}
+
+.apropos_parti1_text1 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 45%;
+  gap: 2rem;
+  border-radius: 32px;
+  transition: width 0.5s; /* Ajout d'une transition fluide */
+}
+.apropos_parti1_text1 div {
+  font-size: 35px;
+  font-weight: bold;
+}
+.apropos_parti1_text1 p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(102, 102, 102);
+  line-height: 30px;
+}
+.apropos_2 {
+  width: 100%;
+  height: 35vw;
+  background-image: url('https://hezli.tn/static/media/Replace%20with%20your%20image.c1d6ab01f2b701f9e781.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+.apropos_2_quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: 28vw;
+  background-color: rgb(37, 36, 58);
+}
+.apropos_2_quote img {
+  width: 3vw;
+  height: 3vw;
+}
+.apropos_2_quote_text {
+  width: 85%;
+  margin-top: 80px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.apropos_2_quote_text1 {
+  color: rgb(255, 225, 33);
+}
+@media (max-width: 1000px) {
+  /* Ajout d'une règle CSS pour les écrans de largeur maximale de 768px (ou pour les téléphones) */
+  .apropos_parti1_img img {
+    width: 50%; /* L'image occupe maintenant 50% de la largeur du conteneur */
+  }
+
+  .apropos_parti1_text1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .apropos_header_text {
+    width: 100%;
+  }
+  .apropos_header_text p {
+    width: 100%;
+  }
+  .apropos_header {
+    height: fit-content;
+    padding: 20px;
+  }
+  .apropos_2_quote_text {
+    width: fit-content;
+    font-size: 10px;
+    margin: 20px;
+  }
+}

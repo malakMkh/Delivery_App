@@ -1,0 +1,200 @@
+.centred_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: calc(110vh - 80px);
+}
+.centred_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url('iimage.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+  width: 36%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1040px) {
+  .container {
+    width: 100%;
+  }
+}
+.second_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10vh;
+}
+.form {
+  position: relative;
+  display: block;
+  width: 370px;
+  min-height: 450px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0px 0px rgb(255, 212, 0);
+  margin: 30px auto;
+}
+
+.form_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5vh;
+  background-color: rgb(255, 212, 0);
+  height: 80px;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
+}
+.icon {
+  width: 30px;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-left: 15px;
+  text-shadow: 1px 1px 0px rgb(255, 212, 0);
+  color: rgb(37, 36, 58); /* Increase the font size to make the icon larger */
+  transform: scaleX(1.5);
+}
+.p_icon {
+  display: flex;
+}
+.p_icon strong {
+  font-size: 20px;
+}
+.form_header p {
+  margin-right: 10px;
+  color: rgb(37, 36, 58);
+  font-size: 14px; /* Increase the font size to make the icon larger */
+  font-weight: bold;
+}
+.form_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+  margin: 10px 0px 0px 0px;
+
+  background-color: rgb(255, 212, 0);
+  border-radius: 8px;
+  border: 1px solid rgb(43, 43, 65);
+  box-shadow: 2px 2px 2px rgb(43, 43, 65);
+}
+.button_warpper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 1040px) {
+  .button_warpper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 20px 10px;
+  gap: 17px;
+}
+.option_avec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+.option_text1 {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bolder;
+  font-size: 20px;
+  gap: 2vh;
+}
+.option_text2 {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bolder;
+  font-size: 20px;
+  gap: 2vh;
+}
+.option_img img {
+  width: 30px;
+  height: 30px;
+}
+.header_text {
+  display: flex;
+  align-items: center;
+}
+.header_img {
+  width: 50px;
+  height: 50px;
+}
+.header_tm {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  gap: 8%;
+}
+.options img {
+  width: 15px;
+  height: 15px;
+}
+.options_text {
+  width: 100%;
+}
+.option_text1::after {
+  content: ''; /* Contenu vide */
+  display: inline-flex; /* Afficher en tant que bloc en ligne */
+  width: 110px; /* Largeur de l'image */
+  height: 40px; /* Hauteur de l'image */
+  background-image: url('imagec.png'); /* Chemin vers votre image */
+  background-size: cover; /* Ajustement de la taille de l'image */
+
+  /* Espace entre le texte et l'image */
+}
+.option_text2::after {
+  content: ''; /* Contenu vide */
+  display: inline-flex; /* Afficher en tant que bloc en ligne */
+  width: 100px; /* Largeur de l'image */
+  height: 36px; /* Hauteur de l'image */
+  background-image: url('imagec2.png'); /* Chemin vers votre image */
+  background-size: cover; /* Ajustement de la taille de l'image */
+
+  /* Espace entre le texte et l'image */
+}
+.options_p2 {
+  font-size: 14px;
+  font-weight: lighter;
+  color: rgb(139, 139, 139);
+  margin-top: 3px;
+}
+.unselected {
+  filter: grayscale(95%);
+  /* Vous pouvez ajouter d'autres styles ici pour le rendu visuel de l'option non sélectionnée */
+}

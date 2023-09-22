@@ -1,0 +1,268 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 66px;
+  background-color: rgb(37, 36, 58);
+  font-weight: bold;
+  font-size: 0.7em;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  margin-left: 19px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Ajoutez cette classe pour cacher le ul */
+.hide {
+  display: none;
+}
+
+.logo {
+  width: 130px;
+  height: 20px;
+}
+a:hover {
+  color: rgb(255, 212, 0);
+}
+
+.language_selector select {
+  background-color: transparent;
+  border: none;
+}
+.js_language_selector {
+  color: #ffffff;
+}
+
+.btn_cn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+.btn_sn {
+  color: rgb(255, 212, 0);
+  width: 100px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 212, 0);
+}
+
+.stepper {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 24%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+}
+
+.stepper_wrapper {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepper_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  font-size: 12px;
+
+  z-index: 1;
+}
+
+.step_counter {
+  font-weight: bold;
+}
+
+.step_bar_B,
+.step_bar_G {
+  width: 100%;
+  height: 12px;
+}
+
+.step_bar_B {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.step_bar {
+  width: 100%;
+  background-color: transparent;
+}
+.step_bar_G {
+  background-color: rgb(196, 196, 196);
+  position: relative;
+}
+
+.completed .step_bar_B,
+.completed .step_bar_G {
+  background-color: rgb(
+    248,
+    206,
+    21
+  ); /* Mettez la couleur que vous souhaitez pour les étapes complétées */
+}
+
+.stepper_item .step_counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  margin-bottom: 6px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.stepper_item.active {
+  font-weight: bold;
+}
+
+.stepper_item.completed .step_counter {
+  background-color: rgb(255, 212, 0);
+}
+
+.stepper_item.completed::after {
+  border-color: rgb(255, 212, 0); /* Changed from '#4bb543' to 'border-color' */
+  z-index: 3;
+}
+.stepper_item.completed::before {
+  border-color: rgb(255, 212, 0); /* Changed from '#4bb543' to 'border-color' */
+  z-index: 3;
+}
+.icon {
+  text-shadow: 1px 1px 1px rgb(37, 36, 58);
+  color: rgb(255, 212, 0);
+  font-size: 30px; /* Increase the font size to make the icon larger */
+}
+/* Header.module.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Ajustez la largeur selon vos besoins */
+  height: 100%;
+  background-color: #ffffff; /* Couleur de fond de la barre latérale */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre pour un aspect de profondeur */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* Espace pour l'icône et l'en-tête */
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+.icon_x {
+  text-shadow: 1px 1px 1px rgb(37, 36, 58);
+  color: rgb(255, 212, 0);
+  font-size: 35px;
+  margin: 23px;
+}
+.sidebar .navLink {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  padding: 20px 10px;
+  transition: background-color 0.3s;
+}
+.sidebar .btn_cn {
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+.sidebar .navLink:hover {
+  color: #f5db18;
+}
+.sidebar .btn_cn:hover {
+  color: #f5db18;
+}
+/* Autres styles pour la barre latérale */
+.hidden {
+  display: none !important;
+  /* Autres styles si nécessaires */
+}
+.profile_menu {
+  position: relative;
+  display: inline-block;
+}
+.profile {
+  color: #ffffff;
+  font-size: 13px;
+}
+.profile::after {
+  content: '\25BC'; /* Code Unicode pour la flèche vers le bas */
+  font-size: 0.6em;
+  margin-left: 5px;
+}
+.profile_header {
+  display: flex;
+  align-items: center;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: rgb(37, 36, 58);
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.icon_profile {
+  text-shadow: 1px 1px 1px rgb(37, 36, 58);
+  color: rgb(255, 212, 0);
+  font-size: 24px;
+  margin-right: 6px;
+}
+.dropdown_content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content a:hover {
+  color: rgb(255, 212, 0);
+}
+
+.profile_menu:hover .dropdown_content {
+  display: block;
+}

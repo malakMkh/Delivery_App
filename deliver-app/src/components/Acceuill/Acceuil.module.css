@@ -1,0 +1,378 @@
+.acceuil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 36, 58);
+  padding: 0px 20px 20px 20px;
+}
+.acceuil_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 33px;
+  gap: 5rem;
+  margin-top: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.acceuil_parti1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 3rem;
+  padding-top: 30px;
+}
+.acceuil_parti1_img {
+  display: flex;
+  justify-content: center;
+}
+
+.acceuil_parti1_img img {
+  width: 65%; /* L'image occupe 100% de la largeur du conteneur */
+  height: auto;
+  max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+  transition: width 0.5s; /* Ajout d'une transition fluide */
+}
+
+.acceuil_parti1_text1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 45%;
+  gap: 2rem;
+  border-radius: 32px;
+  transition: width 0.5s; /* Ajout d'une transition fluide */
+}
+.acceuil_parti1_text1 div {
+  font-size: 45px;
+  font-weight: bold;
+}
+.acceuil_parti1_text1 p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(102, 102, 102);
+  line-height: 30px;
+}
+.acceuil_parti2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  min-width: 60%;
+
+  gap: 2rem;
+}
+
+.acceuil_parti2_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+}
+.acceuil_parti2_1_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  max-width: 60%;
+  min-width: 30%;
+  margin-left: 20px;
+}
+.acceuil_parti2_1_text p {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: rgb(102, 102, 102);
+  line-height: 20px;
+}
+.line {
+  border-left: 1px solid rgb(1, 1, 1);
+  height: 100px;
+  margin: 0 10px;
+}
+.acceuil_parti3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 4rem;
+}
+.acceuil_parti3 p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(102, 102, 102);
+  line-height: 20px;
+}
+.acceuil_parti3_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.acceuil_parti3_2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.acceuil_parti3_3 {
+  max-width: 300px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.acceuil_parti3_3 img {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+.acceuil_2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+}
+.acceuil_2_text {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  color: #fff;
+  gap: 2rem;
+}
+.acceuil_2_text h1 {
+  font-size: 4vw;
+}
+.acceuil_2_img {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.acceuil_2_img img {
+  width: 100%; /* L'image occupe 100% de la largeur du conteneur */
+  height: auto;
+  max-width: 80%;
+}
+
+.acceuil_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 33px;
+  gap: 5rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.acceuil_3_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  gap: 1rem;
+}
+.acceuil_3_boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 30px;
+}
+.acceuil_3_row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.acceuil_3_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 20px 30px 20px;
+  gap: 2rem;
+  width: 300px;
+  height: 300px;
+  background-color: gainsboro;
+}
+.acceuil_2_text_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 2rem;
+}
+.acceuil_2_img_2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50vh;
+}
+/* ------------------------------footer----------------------------------------------------------------- */
+.Footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  padding: 50px;
+  background-color: rgb(37, 36, 58);
+}
+.line_f {
+  border-top: 1px solid rgb(255, 255, 255);
+  width: 100%;
+  margin: 10px 0px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.contact_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.contact_box h3 {
+  color: rgb(170, 170, 170);
+}
+.contact_box_c {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact_box_c img {
+  margin-right: 10px;
+}
+.copyright {
+  color: #fff;
+}
+.acceuil_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.accueil_header {
+  width: 100%;
+  height: 40vw;
+  background-color: rgb(37, 36, 58);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  background-image: url('https://colissimo.tn/wp-content/uploads/2021/03/fragile.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(15, 15, 15, 0.553);
+}
+.accueil_header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  top: 0px;
+  left: 0px;
+  background: rgba(37, 36, 58, 0.3);
+  pointer-events: none;
+}
+
+.accueil_header_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  text-align: center;
+  width: 70%;
+  gap: 2rem;
+  color: #fff;
+  overflow: hidden;
+}
+.accueil_header_text h1 {
+  font-size: 5vw;
+}
+.accueil_header_text p {
+  width: 64%;
+}
+.accueil_header_text h5 {
+  color: rgb(255, 225, 33);
+}
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  /* Ajout d'une règle CSS pour les écrans de largeur maximale de 768px (ou pour les téléphones) */
+  .acceuil_parti1_img img {
+    width: 50%; /* L'image occupe maintenant 50% de la largeur du conteneur */
+  }
+  .acceuil_2_img img {
+    width: 60%; /* L'image occupe maintenant 50% de la largeur du conteneur */
+  }
+  .acceuil_parti1_text1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .acceuil_parti1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .line {
+    border-top: 1px solid rgb(1, 1, 1);
+    height: 0%;
+    width: 100px;
+    margin: 10px 0;
+  }
+  .acceuil_parti2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .acceuil_parti2_1 {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .acceuil_parti3_1 {
+    text-align: center;
+  }
+  .acceuil_parti3_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .acceuil_parti3_3 {
+    width: 70%;
+  }
+  .acceuil_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .acceuil_2_text {
+    text-align: center;
+    width: 70%;
+  }
+  .acceuil_3_row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,364 @@
+/* ------Home---------*/
+.centred_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: calc(110vh - 80px);
+}
+.centred_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url('iimage.jpg');
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  width: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1040px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1150px) {
+  .centred_container {
+    width: 90%;
+  }
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+/* Pour les écrans jusqu'à 1150px */
+
+.form {
+  position: relative;
+  width: 31%;
+  min-width: 330px;
+  max-width: 450px;
+  min-height: 100px;
+  background-color: #ffffff;
+  border: 1px solid darkgray;
+  border-radius: 15px;
+  box-shadow: 8px 8px 0px 0px rgb(255, 212, 0);
+  margin: 30px auto;
+  transition: height 0.5s ease-in-out 0s;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Pour les écrans jusqu'à 1040px */
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Styles du formulaire */
+
+.form_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 30px 0px 30px;
+}
+.form_header h2 {
+  text-shadow: 1px 1px 1px rgb(255, 212, 0);
+}
+.icon {
+  text-shadow: 1px 1px 1px rgb(37, 36, 58);
+  color: rgb(255, 212, 0);
+  font-size: 30px; /* Increase the font size to make the icon larger */
+}
+.form_input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+.form_input input {
+  width: 100%; /* Ajustez en fonction de vos besoins */
+  max-width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(240, 239, 239, 0.838);
+  padding-left: 40px; /* Increase this value to adjust the space for the image */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE0UlEQVR4nO2YfUwbZRzHnyjGGLniJPtDY4zLEnW2galx6ECJc+weOmEL8+7m3P6wd6Jmk2V/LDHGjGVrBTKjDq5mClMzElxQN8buOjM2eW1BNsgM0cGWTZS9cX1l9Ar0Ws4cUCijtFfTKyXhm3yTJk2efD53v+eeXgFYylKWErOoDw6uVeu5Eo2Ba1TrrXc0euuo2mDlNQauX2PgzmsM3L6cL52rQaJFrR/cotZb/9AYrGK4ri1zdGM078VpvgkzujcuNDd4psz6uFrPnY0ELvWFUvt1zOhx4kaPGChm9NRhla5HFwR+VQn3vMZgvSUHPr3E6sBo/u9g+Jny/Xi5Oz2u8GkGu0Zt4Jxy4DV6zltA812h4T2BckTF6NNxgbe9A1XndHvq0vS3BTkCeYfdLRHgxak7cTUu42TH4fd2AopXthFdGQf+uRsOPueLoSZ58J7AnjiiKLwDg1kSfKA3iPzLr+/vvRkKPvOQ4wJO877oBHj/VprPUEzARqD1wQJSOTz3DvFJe28w/EultmsYzbujgccnx0jI+7H6W0XgnVjOChuO+u8VkGoloGvnXrZTgl9tsA1upt3lGO3Jyq8Ske2HxIfxck8mTvM/SFc4nMCm6vpmlCX9OaeoFTEXsGPoB6HgA7UR6FjZR0cbM0rtufOtgRv5PNzIj4aC31J5qRmylCgVZcii2AsQ8OfwAnDcSa6jIq2D0XzRvfBvHbndibKFvoAAZKlfFBBA/wwnMLT35TqxFtwfaZ3sYjEJN3oGpjfu164r8PSu4SB4ETJUb8wFbDhqnQ/e8X52h2BWVcpdC6P576Y2LQfrPu6fBT8hQLoUEIDekPA71vd4Wx8ZEcyIIQqBzzCaH9H+9HnPHPhJASHmAnYcHZojsHXDjbGGVM5nUYmCWVUldy3cyB/Nr6lpCwk/WZsSAn2z4dFh78nH+iT4SQHkX7ERJMnZA5uOmU6FgRchS15WQuBE0CPT56la2RmAD+quSOu8Wbf/Xci8Nx5BoCbmAjYC3R0QGNanN4WAFwWLalRoR/LnW+PAWaiFJp0nPDylzDngJNCnpJPYVZTZEgp+ZpRUfsGiOuZtS35VbFyeLF5cluI1J79mbVt++G3TtlsR4VnSD03UE0CJuHZnfSO0pnjDCYSq14y4i34t6IsEDyevvgkoFa9FtUYwq8ajgZfuyFcN6zrkwENJoF73ClAyghk5Ho0Acz69STY8Qx0HSkdsTVkmmJEBOfB9LU+2yoWHLHXzjRM7UkE8IrQjuZFGydGW2r3RpBuTBc9Q49BEauMCPy1hRirmgx9pSxkgTNsdsq8+Q1WAeEc0gQd9FuTSnCeOBbm780zB1ShGpwer3fNQ3AUmJDqSnxPMCB90kAkHG2CX7E3LkryWIVeBhYyvXfVhQKD2tzXTb1UyR4cEiRCfRXWyq3ml7MflVGtBouSv359N1bK66/JHh7q2vqEwBSRStExhBspSkR+bDCkoftr+30CG3CfjtP0UJGqyG4uTUIa6EAa++8WLhQ+ARA40kWkoS/lCzL0v57ROAxZDIEvWhBCoBosl6BlKPfH7ZubA8i/4gRVtUIaa/tcBZalmsNiCMmRRQGADS0Z82U/IzRwQWDSbNzjFxcX3oQx1Tqr0edaXS1kKSJj8B1PN2xbr8aR9AAAAAElFTkSuQmCC'); /* Replace 'path/to/your/image.png' with the actual image path */
+  background-repeat: no-repeat;
+  background-position: 12px center; /* Adjust the position of the image within the input */
+  background-size: 18px; /* Adjust the size of the image */
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding: 0px 20px 20px;
+  width: 100%;
+}
+
+.form_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form_date input,
+select {
+  padding: 13px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(240, 239, 239, 0.838);
+}
+.form_date input {
+  width: 50%;
+}
+
+.form_date time {
+  width: 100%;
+}
+.time {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1040px) {
+  .time {
+    width: 100%;
+  }
+}
+/*----toggel switch------*/
+.form_switch {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+}
+.form_switch div {
+  font-size: 15px;
+}
+.toggle_switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  margin-bottom: 22px;
+  margin-right: 10px;
+}
+
+/* Style the slider (the moving part) */
+.slider {
+  position: absolute;
+  top: 50%; /* Adjust the top position to vertically center the slider */
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 21px;
+  background-color: #bbbbbb; /* default color when the switch is off */
+  border-radius: 34px; /* make it round */
+  transition: 0.4s; /* smooth transition when moving the switch */
+}
+/* Style the slider when it's on (checked) */
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 8px; /* Adjust the height of the ring */
+  width: 8px; /* Adjust the width of the ring */
+  bottom: 7px;
+  top: 0; /* Center the ring vertically */
+  left: 5px; /* Align the ring to the left */
+  transform: translate(-50%);
+  border: 7px solid white; /* Adjust the size of the hole */
+  border-radius: 50%;
+  background-color: transparent; /* Make the background transparent */
+  transition: 0.4s; /* smooth transition when moving the switch */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+/* Hide the input checkbox */
+.toggle_switch input {
+  display: none;
+}
+
+/* Style the slider when the switch is on */
+.toggle_switch input:checked + .slider {
+  background-color: rgb(255, 212, 0); /* custom color when the switch is on */
+}
+
+/* Move the slider to the right when the switch is on */
+.toggle_switch input:checked + .slider::before {
+  transform: translateX(15px);
+}
+.form_indication {
+  display: flex;
+  align-items: center;
+}
+.indication_icon {
+  color: rgb(255, 212, 0);
+  font-size: 15px;
+  background-color: #ffffff;
+  margin: 0px 16px 17px 5px;
+}
+.indication {
+  font-size: 13px;
+}
+.form_button {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 145px;
+  height: 40px;
+
+  padding: 12px;
+  background-color: rgb(255, 212, 0);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 2px 2px 1px rgb(37, 36, 58);
+}
+.button_warpper {
+  display: flex;
+  justify-content: end;
+}
+.form_switch_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 0px 10px 10px;
+}
+
+.switch_button {
+  display: flex;
+  align-items: center;
+}
+.switch_button button {
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: relative;
+}
+.right_button {
+  width: 130px;
+
+  border-radius: 0px 20px 20px 0px;
+}
+.active {
+  background-color: rgb(255, 212, 0);
+}
+/* ----------------------affichage de l'icon------------------------------------------- */
+.left_button .check_icon {
+  display: none; /* Masquer l'icône au départ */
+}
+
+.left_button.active .check_icon {
+  display: inline-block; /* Afficher l'icône lorsque le bouton est activé */
+}
+
+.right_button .check_icon {
+  display: none; /* Masquer l'icône au départ */
+}
+
+.right_button.active .check_icon {
+  display: inline-block; /* Afficher l'icône lorsque le bouton est activé */
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/* .active:hover .check_icon {
+  transform: translateX(-10px);
+} */
+.left_button {
+  width: 170px;
+  border-radius: 20px 0px 0px 20px;
+}
+.check_icon {
+  font-size: 15px;
+  margin-right: 7px;
+  transition: transform 0.3s ease;
+}
+.form_conter {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  left: 0;
+  margin-bottom: 10px;
+}
+
+.counter {
+  /* Container en position relative */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.counter button {
+  left: 0; /* Toujours aligné à gauche */
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgb(255, 212, 0);
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.count {
+  right: 0; /* Toujours aligné à droite */
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  width: 6vw;
+}
+
+.ascen {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1040px) {
+  .form {
+    cursor: auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: rgb(255, 212, 0) 4px 4px 0px 1px;
+  }
+  .form_input input {
+    width: 100%;
+    max-width: 100%; /* Assurez-vous que l'input ne dépasse pas le conteneur */
+  }
+  .form_date {
+    flex-wrap: wrap;
+    gap: 3vh;
+  }
+  .form_date select {
+    width: 50%;
+  }
+  .form_date input {
+    width: 100%;
+  }
+  .form_switch_button {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .form_conter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .count {
+    width: 10vw;
+  }
+}
